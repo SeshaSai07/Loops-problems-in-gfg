@@ -1,0 +1,30 @@
+Question:
+
+Given an integer n. Print string "Geeksforgeeks" n times but a minimum of 1 time using a do-while loop.
+Note: n can be less than 0.
+
+Examples:
+
+Input: 3
+Output: 
+Geeksforgeeks
+Geeksforgeeks
+Geeksforgeeks
+Explanation: Printed "Geeksforgeeks" 3 times.
+Input: -1
+Output: 
+Geeksforgeeks
+Explanation: Printed "Geeksforgeeks" 1 times compulsory.
+
+Solution:
+
+class Solution {
+    public void printGeeks(int n) {
+        // Code here
+        int count = 0;
+        do {
+            System.out.println("Geeksforgeeks");
+            count++;
+        } while(count < n);
+    }
+}
